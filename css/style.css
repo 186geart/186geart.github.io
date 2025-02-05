@@ -573,7 +573,7 @@ button:focus,
 
 .footer-main {
   padding: 92px 0;
-  background: #0326b3;
+  background: #800000;
 }
 
 @media (max-width: 768px) {
@@ -1165,7 +1165,7 @@ button:focus,
   width: 200%;
   height: 200%;
   border-radius: 50%;
-  background-image:  linear-gradient(45deg, #009EC5 0%, #2e7eed 20%, #02225B 50%);
+  background-image:  linear-gradient(45deg, #A52A2A 0%, #800000 20%, #4C1C24 50%);
 }
 
 .pull-top {
