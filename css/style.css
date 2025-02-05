@@ -224,7 +224,7 @@ a:hover {
   height: 125px;
   width: 125px;
   font-size: 40px;
-  background: #2e7eed;
+  background: #13634a;
   border-radius: 100%;
   color: #fff;
   line-height: 125px;
@@ -255,7 +255,7 @@ a:hover {
 }
 
 .form-control.main:focus {
-  border: 1px solid #2e7eed;
+  border: 1px solid #13634a;
   box-shadow: none;
 }
 
@@ -318,7 +318,7 @@ button:focus,
   padding: 20px 35px;
   font-size: 14px;
   background: #fff;
-  color: #2e7eed;
+  color: #13634a;
 }
 
 .btn-download span {
@@ -329,7 +329,7 @@ button:focus,
 .btn-main {
   padding: 25px 45px;
   border-radius: 3px;
-  background: #008000;
+  background: #13634a;
   color: #fff;
   outline: none;
 }
@@ -346,7 +346,7 @@ button:focus,
 .btn-main-md {
   padding: 17px 38px;
   border-radius: 3px;
-  background: #008000;
+  background: #13634a;
   color: #fff;
   outline: none;
 }
@@ -363,7 +363,7 @@ button:focus,
 .btn-main-sm {
   padding: 15px 35px;
   border-radius: 3px;
-  background: #008000;
+  background: #13634a;
   color: #fff;
   outline: none;
   font-size: 14px;
@@ -380,7 +380,7 @@ button:focus,
 
 .btn-white {
   background: white;
-  color: #008000;
+  color: #13634a;
 }
 
 .btn-rounded-icon {
@@ -427,12 +427,12 @@ button:focus,
 }
 
 .main-nav .navbar-nav .nav-item.active .nav-link {
-  color: #2e7eed;
+  color: #13634a;
 }
 
 .main-nav .navbar-nav .nav-item.active .nav-link:before {
   content: '';
-  background: #2e7eed;
+  background: #13634a;
   width: 60%;
   height: 2px;
   position: absolute;
@@ -501,7 +501,7 @@ button:focus,
 
 .main-nav .dropdown .dropdown-menu .dropdown-item.active, .main-nav .dropdown .dropdown-menu .dropdown-item.focus, .main-nav .dropdown .dropdown-menu .dropdown-item:focus, .main-nav .dropdown .dropdown-menu .dropdown-item:hover {
   background-color: transparent;
-  color: #2e7eed;
+  color: #13634a;
 }
 
 .main-nav .dropdown .dropdown-menu li:first-child {
@@ -535,7 +535,7 @@ button:focus,
 
 .dropdown-submenu.active > a,
 .dropdown-submenu:hover > a {
-  color: #2e7eed;
+  color: #13634a;
 }
 
 .dropleft .dropdown-menu,
@@ -912,7 +912,7 @@ button:focus,
 
 .services .service-block i {
   font-size: 30px;
-  color: #2e7eed;
+  color: #13634a;
   margin-bottom: 15px;
   display: inline-block;
 }
@@ -967,7 +967,7 @@ button:focus,
 
 .service .service-box .service-item i {
   font-size: 20px;
-  color: #2e7eed;
+  color: #13634a;
   display: inline-block;
   margin-bottom: 10px;
 }
@@ -1084,7 +1084,7 @@ button:focus,
 .video-promo .content-block a i.video {
   height: 125px;
   width: 125px;
-  background: #2e7eed;
+  background: #13634a;
   display: inline-block;
   font-size: 40px;
   color: #fff;
@@ -1141,11 +1141,11 @@ button:focus,
 }
 
 .testimonial .testimonial-slider .owl-dots .owl-dot:hover span {
-  background: #2e7eed;
+  background: #13634a;
 }
 
 .testimonial .testimonial-slider .owl-dots .owl-dot.active span {
-  background: #2e7eed;
+  background: #13634a;
 }
 
 /* homepage 3 */
@@ -1318,7 +1318,7 @@ hr {
   display: block;
   height: 2px;
   border: 0;
-  border-top: 2px solid #2e7eed;
+  border-top: 2px solid #13634a;
   margin: 1em 0;
   padding: 0;
 }
@@ -1327,7 +1327,7 @@ hr {
   height: 80px;
   width: 80px;
   text-align: center;
-  background: #2e7eed;
+  background: #13634a;
 }
 
 .icon-box i {
@@ -1376,7 +1376,7 @@ hr {
 
 .team-sm .image .social-links {
   position: absolute;
-  background: #2e7eed;
+  background: #13634a;
   left: 0;
   right: 0;
   text-align: center;
@@ -1476,7 +1476,7 @@ hr {
 }
 
 .featured-article article.featured .content h2 a:hover {
-  color: #2e7eed;
+  color: #13634a;
 }
 
 .featured-article article.featured .content p {
@@ -1506,7 +1506,7 @@ hr {
 }
 
 .post-sm .post-title h3 a:hover {
-  color: #2e7eed;
+  color: #13634a;
 }
 
 .post-sm:hover .post-thumb img {
@@ -1644,13 +1644,13 @@ hr {
 }
 
 .pagination-nav ul.pagination li a:hover {
-  background-color: #2e7eed;
+  background-color: #13634a;
   color: #fff;
   border-color: transparent;
 }
 
 .pagination-nav ul.pagination .active a {
-  background-color: #2e7eed;
+  background-color: #13634a;
   color: #fff;
   border-color: transparent;
 }
@@ -1671,11 +1671,11 @@ hr {
 }
 
 .about .about-slider .owl-dots .owl-dot:hover span {
-  background: #2e7eed;
+  background: #13634a;
 }
 
 .about .about-slider .owl-dots .owl-dot.active span {
-  background: #2e7eed;
+  background: #13634a;
 }
 
 .create-stories .block img {
