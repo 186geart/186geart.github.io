@@ -51,13 +51,16 @@ FACEBOOK:
 						<a class="nav-link" href="index.html">Inicio</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" style="color: gray">Blog</a>
+						<a class="nav-link disabled-link-o" href="blog.html">Blog</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="team.html">Escotistas</a>
+						<a class="nav-link" href="team.html">Voluntários</a>
 					</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="o-que-fazemos.html">O que Fazemos</a>
+                      </li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Sobre</a>
+						<a class="nav-link" href="#">Quem Somos</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="contact.html">Contato</a>
@@ -74,12 +77,171 @@ FACEBOOK:
 				<!-- titulo da página -->
 				<h1>Crie sua assinatura do 186 GEART</h1>
 				<!-- descrição da página -->
-				<p><a href="https://sites.google.com/186geart.com.br/assinatura/">Crie aqui</a></p>
 			</div>
 		</div>
 	</div>
 </section>
+<section class="section create-stories pt-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="block">
+					<!-- titulo -->
+					<h3>Criar Assinatura Institucional</h3>
+					<!-- Story -->
+					<p>Para criar a sua assinatura institucional, realize os seguintes passos:</p>
+					<ul style="list-style-type: square;">
+						<li>Preencha os campos abaixo corretamente, usando letra maiúscula apenas na primeira letra de cada termo do nome e função.</li>
+						<li>Copie o código gerado na última caixa.</li>
+						<li>Após copiar o código, siga as instruções:
+							<ol style="list-style-type: decimal;">
+								<li><a href="https://support.google.com/mail/answer/8395" target="_blank">Deste tutorial</a> para inserir no Gmail.</li>
+								<li><a href="https://support.mozilla.org/pt-BR/kb/assinaturas" target="_blank">Deste Tutorial</a> para inserir no Thunderbird.</li>
+							</ol>
+						</li>
+					</ul>
+				</div>
+			</div>
+						
+		</div>
+	</div>
+</section>
+<section class="section create-stories pt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="block">
+                    <!-- Título -->
+                    <h3>Assinatura do Grupo Escoteiro</h3>
+                    <!-- Conteúdo -->
+                    <div class="assinatura selecionavel" id="assinaturaGerada">
+                        <table>
+                            <tr>
+                                <td style="text-align:center" valign="top">
+                                    <a href="https://www.186geart.com.br" target="_blank">
+                                        <img src="images/logo-13gecre.png" alt="Logo do Grupo Escoteiro" border="0" />
+                                    </a>
+                                </td>
+                                <td style="padding-left:10px">
+                                    <div class="nome" id="nome">SEU NOME</div>
+                                    <div class="cargo" id="cargo"></div>
+                                    <div id="telefone"></div>
+                                    <div id="email"></div>
+                                    <div><a href="https://www.186geart.com.br" target="_blank">https://www.186geart.com.br</a></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
 
+                    <div class="formulario">
+                        <h2>Preencha o formulário para gerar sua assinatura</h2>
+                        <form id="formAssinatura">
+                            <label for="inputNome">Nome:</label>
+                            <input type="text" id="inputNome" placeholder="Digite seu nome" required>
+
+                            <label for="inputCargo">Cargo:</label>
+                            <input type="text" id="inputCargo" placeholder="Digite seu cargo">
+
+                            <label for="inputTelefone">Telefone:</label>
+                            <input type="text" id="inputTelefone" placeholder="Digite seu telefone">
+
+                            <label for="inputEmail">E-mail:</label>
+                            <input type="email" id="inputEmail" placeholder="Digite seu e-mail">
+
+                            <button type="submit">Gerar Assinatura</button>
+                        </form>
+                    </div>
+
+                    <div class="botoes">
+                        <button id="btnThunderbird">Copiar para Thunderbird</button>
+                    </div>
+
+                    <div class="instrucoes">
+                        <h3>Como usar:</h3>
+                        <p>
+                            <strong>Para o Gmail:</strong>
+                            <ol>
+                                <li>Preencha o formulário acima e clique em "Gerar Assinatura".</li>
+                                <li>Selecione a assinatura gerada com o mouse.</li>
+                                <li>Copie (<code>Ctrl+C</code>) e cole (<code>Ctrl+V</code>) no Gmail.</li>
+                            </ol>
+                        </p>
+                        <p>
+                            <strong>Para o Thunderbird:</strong>
+                            <ol>
+                                <li>Preencha o formulário acima e clique em "Gerar Assinatura".</li>
+                                <li>Clique no botão "Copiar para Thunderbird".</li>
+                                <li>Cole o código HTML diretamente no Thunderbird.</li>
+                            </ol>
+                        </p>
+                    </div>
+
+                    <script>
+                        document.getElementById('formAssinatura').addEventListener('submit', function(event) {
+                            event.preventDefault();
+
+                            const nome = document.getElementById('inputNome').value;
+                            const cargo = document.getElementById('inputCargo').value;
+                            const telefone = document.getElementById('inputTelefone').value;
+                            const email = document.getElementById('inputEmail').value;
+
+                            // Atualiza os campos da assinatura
+                            document.getElementById('nome').textContent = nome;
+                            document.getElementById('cargo').textContent = cargo || '\u00A0'; // Espaço reservado
+                            document.getElementById('telefone').textContent = telefone || '\u00A0'; // Espaço reservado
+                            document.getElementById('email').textContent = email || '\u00A0'; // Espaço reservado
+
+                            alert('Assinatura gerada com sucesso! Selecione e copie a assinatura acima para o Gmail.');
+                        });
+
+                        function copiarAssinaturaThunderbird() {
+                            const nome = document.getElementById('nome').textContent;
+                            const cargo = document.getElementById('cargo').textContent.trim(); // Remove espaços extras
+                            const telefone = document.getElementById('telefone').textContent.trim(); // Remove espaços extras
+                            const email = document.getElementById('email').textContent.trim(); // Remove espaços extras
+                            const site = "https://www.186geart.com.br";
+                            const logo = "images/logo-13gecre.png";
+
+                            // Formato para Thunderbird (HTML)
+                            const assinatura = `
+                                <table>
+                                    <tr>
+                                        <td style="text-align:center" valign="top">
+                                            <a href="${site}" target="_blank">
+                                                <img src="${logo}" alt="Logo do Grupo Escoteiro" border="0" />
+                                            </a>
+                                        </td>
+                                        <td style="padding-left:10px">
+                                            <div class="nome">${nome}</div>
+                                            <div class="cargo">${cargo || '\u00A0'}</div>
+                                            <div>${telefone || '\u00A0'}</div>
+                                            <div>${email || '\u00A0'}</div>
+                                            <div><a href="${site}" target="_blank">${site}</a></div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            `;
+
+                            // Copia o código HTML para a área de transferência
+                            const tempTextArea = document.createElement('textarea');
+                            tempTextArea.value = assinatura;
+                            document.body.appendChild(tempTextArea);
+                            tempTextArea.select();
+                            document.execCommand('copy');
+                            document.body.removeChild(tempTextArea);
+
+                            alert('Assinatura copiada para Thunderbird! Cole no seu cliente de e-mail.');
+                        }
+
+                        document.getElementById('btnThunderbird').addEventListener('click', function() {
+                            copiarAssinaturaThunderbird();
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <footer>
 	<div class="footer-main">
@@ -103,14 +265,14 @@ FACEBOOK:
 				<div class="col-lg-2 col-md-3 col-6 mt-5 mt-lg-0">
 					<div class="block-2">
 						<!-- Seções -->
-						<h6>Ramos</h6>
-						<!-- links -->
-						<ul>
-							<li><a href="lobinho.html">Lobinho</a></li>
-							<li><a href="escoteiro.html">Escoteiro</a></li>
-							<li><a href="senior.html">Sênior</a></li>
-							<li><a href="pioneiro.html">Pioneiro</a></li>
-						</ul>
+						<h6>Faixas Etárias (Ramos)</h6>
+							<!-- links -->
+							<ul>
+								<li><a href="lobinho.html" class="disabled-link-o">Lobinho</a></li>
+								<li><a href="escoteiro.html" class="disabled-link-o">Escoteiro</a></li>
+								<li><a href="senior.html" class="disabled-link-o">Sênior</a></li>
+								<li><a href="pioneiro.html" class="disabled-link-o">Pioneiro</a></li>
+							</ul>
 					</div>
 				</div>
 			

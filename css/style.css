@@ -2232,4 +2232,14 @@ hr {
   height: 100%;
   object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
 }
+.disabled-link-o {
+  pointer-events: none; /* Desativa o clique */
+  cursor: default; /* Altera o cursor para o padrão */
+  opacity: 0.4 !important; /* Opcional: reduz a opacidade para indicar que está desativado */
+}
+.disabled-link {
+  pointer-events: none; /* Desativa o clique */
+  cursor: default; /* Altera o cursor para o padrão */
+
+}
 /*# sourceMappingURL=style.css.map */
