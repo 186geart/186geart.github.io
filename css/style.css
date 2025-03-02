@@ -2218,4 +2218,18 @@ hr {
   }
 }
 
+.image-container {
+  width: 100%; /* O contêiner ocupa 100% da largura do pai */
+  max-width: 750px; /* Define um tamanho máximo para o contêiner */
+  aspect-ratio: 1 / 1; /* Mantém a proporção 1:1 (quadrado) */
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto; /* Centraliza o contêiner */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
 /*# sourceMappingURL=style.css.map */
