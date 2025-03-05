@@ -2242,4 +2242,65 @@ hr {
   cursor: default; /* Altera o cursor para o padrão */
 
 }
+
+/* Estilos gerais para a seção de memorial */
+.memorial .block {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.memorial .block .image {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.memorial .block .image img {
+  width: 100%;
+  border-radius: 8px;
+  filter: grayscale(100%); /* Converte a imagem para preto e branco */
+  transition: .3s ease;
+}
+
+.memorial .block .image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid rgba(0, 0, 0, 0.3); /* Adiciona uma borda sutil */
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.memorial .block h3 {
+  margin-bottom: 0;
+  line-height: 1;
+  color: #333; /* Cor discreta para o nome */
+  font-size: 1.5rem;
+}
+
+.memorial .block p {
+  font-size: 14px;
+  color: #666; /* Cor discreta para o texto */
+}
+
+.memorial .block p a {
+  color: #555; /* Cor discreta para o link */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.memorial .block p a:hover {
+  color: #000; /* Cor mais escura ao passar o mouse */
+}
+
+
+
+
+
+.mem-hover-zoom:hover img {
+  transform: scale(1.1); /* Zoom mais suave */
+  filter: grayscale(50%); /* Reduz o efeito preto e branco ao passar o mouse */
+}
 /*# sourceMappingURL=style.css.map */
